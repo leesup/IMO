@@ -1,0 +1,33 @@
+name: IMO
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - python=3.11
+  - black
+  - flake8
+  - isort
+  - pip
+  - typer
+  - loguru
+  - tqdm
+  - ipython
+  - jupyterlab
+  - matplotlib
+  - notebook
+  - numpy
+  - pandas
+  - scikit-learn
+  - pip:
+    - python-dotenv
+    - mkdocs
+    - -e .
+  - openjdk=11
+  - bcftools
+  - htslib
+  - pyspark
+  - wget
+  - protobuf
+  - hdf5
+

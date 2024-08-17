@@ -1,4 +1,4 @@
-name: IMO
+name: imo
 channels:
   - conda-forge
   - bioconda

@@ -1,8 +1,4 @@
 name: imo
-channels:
-  - conda-forge
-  - bioconda
-  - defaults
 dependencies:
   - python=3.11
   - black
@@ -19,15 +15,16 @@ dependencies:
   - numpy
   - pandas
   - scikit-learn
-  - pip:
-    - python-dotenv
-    - mkdocs
-    - -e .
+  - mkdocs
   - openjdk=11
-  - bcftools
   - htslib
   - pyspark
   - wget
   - protobuf
   - hdf5
+  - gatk4
+  - plink
+  - plink2
+  - pip:
+    - hail
 

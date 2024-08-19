@@ -1,36 +1,22 @@
 #!/bin/bash
 
-# Define your environment name and environment file
-ENV_NAME="imo"
-ENV_FILE="environment.yml"
+HOME_DIR=/data/$USER
 
-# Initialize conda
-conda init
+# Source conda
+source $HOME_DIR/miniconda3/etc/profile.d/conda.sh
 
-# Modify configuration values in .condarc
-conda config --add channels bioconda
-conda config --add channels conda-forge
-conda config --set channel_priority strict
-conda
+# Create a new conda enviroment
+conda create -n imo
 
-# Function to create a new environment
-create_env() {
-  echo "Creating environment..."
-  conda env create -f $ENV_FILE
-}
+# Activate the conda environment
+conda activate imo
 
-# Function to update the existing environment
-update_env() {
-  echo "Updating environment..."
-  conda env update -f $ENV_FILE --prune
-}
+# Modify the configuration values in .condarc
+conda config --env --add channels bioconda
+conda config --env --add channels conda-forge
+conda config --env --set channel_priority strict
+conda config --env --add pinned_packages blas=*=mkl
 
-# If the environment exists, update the enviroment. If not, create the environment.
-if conda info --envs | grep -q "$ENV_NAME"; then
-  echo "Environment $ENV_NAME exists."
-  update_env
-else
-  echo "Environment $ENV_NAME does not exist."
-  create_env
-fi
+# Update dependencies in the conda environment
+conda env update -f environment.yml
 

@@ -15,13 +15,24 @@ dependencies:
   - numpy
   - pandas
   - scikit-learn
+  - scipy
+  - tensorflow
+  - pymc3
+  - keras
+  - pyvcf
+  - pysam
+  - biopython
   - mkdocs
-  - openjdk=11
+  - openjdk=17
   - htslib
   - pyspark
   - wget
   - protobuf
   - hdf5
+  - bedtools
+  - samtools
+  - bcftools
+  - tabix
   - gatk4
   - plink
   - plink2

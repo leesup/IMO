@@ -1,6 +1,5 @@
-name: imo
 dependencies:
-  - python=3.11
+  - python=3.10
   - black
   - flake8
   - isort
@@ -15,25 +14,10 @@ dependencies:
   - numpy
   - pandas
   - scikit-learn
-  - scipy
-  - tensorflow
-  - pymc3
-  - keras
-  - pyvcf
-  - pysam
-  - biopython
   - mkdocs
-  - openjdk=17
-  - htslib
-  - pyspark
   - wget
-  - protobuf
-  - hdf5
-  - bedtools
-  - samtools
-  - bcftools
+  - openjdk=17
   - tabix
-  - gatk4
   - plink
   - plink2
   - pip:

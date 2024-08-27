@@ -42,7 +42,7 @@ imo is an analysis package to integrate various -omics (e.g., genomics, transcri
 │
 ├── setup.cfg          <- Configuration file for flake8
 │
-└── genomics   <- Source code for genomics data analysis.
+└── imo   <- Source code for use in this project
     │
     ├── __init__.py             <- Makes genomics a Python module
     │

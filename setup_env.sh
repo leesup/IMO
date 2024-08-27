@@ -3,7 +3,7 @@
 HOME_DIR=/data/$USER
 
 # Source conda
-source $HOME_DIR/miniconda3/etc/profile.d/conda.sh
+source $HOME_DIR/miniforge3/etc/profile.d/conda.sh
 
 # Create a new conda enviroment
 conda create -n imo
